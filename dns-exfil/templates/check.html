@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Site Availability</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1 class="text-center my-4">Check Site Availability</h1>
+
+    <div class="container" style="max-width: 700px;">
+        <form method="POST" action="/check-status">
+            <input type="text" class="form-control form-control-lg" name="site" placeholder="e.g: google.com" required>
+            <button type="submit" class="btn btn-info text-white w-100 mt-3 fs-4">Check Status</button>
+        </form>
+
+        {% if error %}
+        <div class="alert alert-danger mt-4" role="alert">
+            Bad input!
+        </div>
+        {% endif %}
+
+        {% if up is not none %}
+        <div class="alert mt-4 {{ 'alert-success' if up else 'alert-danger' }}">
+            <strong>Status:</strong> <span class="fw-bold">{{ 'UP' if up else 'DOWN' }}</span>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

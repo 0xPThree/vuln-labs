@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+<body class="dark-body d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="text-center">
+        <h1 class="text-warning mb-5">Simple SSRF Test Application</h1>
+        <div class="container login-container mx-auto">
+            <form method="POST" action="/api/v3/login">
+                <h2 class="text-center text-white mb-4">Login</h2>
+                <div class="mb-3">
+                    <input class="form-control input-dark" type="text" placeholder="Username" name="username" required>
+                </div>
+                <div class="mb-3">
+                    <input class="form-control input-dark" type="password" placeholder="Password" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-accent w-100">Login</button>
+            </form>
+            <div class="credentials text-center mt-4">
+                <p class="hint">Username: <strong>user1</strong></p>
+                <p>Password: <strong>Passw0rd!</strong></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

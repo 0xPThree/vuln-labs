@@ -1,0 +1,16 @@
+<div class="text-center">
+    <h1 class="text-warning mb-5">Simple IDOR Test Application</h1>
+    <div class="container login-container mx-auto">
+        <form method="POST" action="/api/login">
+            <h2 class="text-center text-white mb-4">Login</h2>
+            <div class="mb-3">
+                <input class="form-control" type="email" placeholder="E-mail" name="email" required>
+            </div>
+            <div class="mb-3">
+                <input class="form-control" type="password" placeholder="Password" name="password" required>
+            </div>
+            <button type="submit" class="btn btn-info w-100">Login</button>
+        </form>
+        <a href="/register" class="accent-link d-inline-block mt-4">Create an account</a>
+    </div>
+</div>
