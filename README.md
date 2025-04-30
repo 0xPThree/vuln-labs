@@ -15,11 +15,11 @@ A short and simple lab built around a tool for checking website status.
 
 A bit more complex lab (to setup atleast) showcasing what can happen if you expose to much code.
 
-**Goal:** Access another users secret access token
+**Goal:** Access another users `access_token`
 
 ## SSRF to DNS Rebinding
 ![ssrf-dns-rebind](images/ssrf-dns-rebind01.png)
 
 The user is allowed to upload files by specifying a target URL.
 
-**Goal:** Access another users uploaded files
+**Goal:** Read content of another users uploaded file(s)
