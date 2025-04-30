@@ -3,7 +3,7 @@
 Login in to the lab environment we see three test files, `secret.txt`, `note.txt` and `test.txt`, has already been uploaded to the server. Below we got a searchbar allowing the user to upload additional files from specified URL.
 
 The one paying attention and capturing the login request with Burp would also have noticed a second POST request to the api endpoint `/api/v3/users`. 
-```json
+```bash
 POST /api/v3/users HTTP/1.1
 Host: 127.0.0.1:8081
 Content-Length: 52
