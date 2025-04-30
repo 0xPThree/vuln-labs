@@ -25,7 +25,7 @@ With three known names (four with our own user) we can build a script to generat
 > First- & Lastname is casesensitive!
 
 ```bash
-» python3 genHashes.py --help 
+» python3 bruteHashes.py --help 
 usage: bruteHashes.py [-h] -e EMAIL -p PASSWORD -n NAME -y YEAR [-v]
 
 Brute-force user hash generation.
