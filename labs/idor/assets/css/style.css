@@ -1,0 +1,173 @@
+/* static/css/style.css */
+
+/* General Page Styling */
+body {
+    background-color: #1c1c1c;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Horizontal center */
+    align-items: center;     /* Vertical center */
+}
+
+/* Headings */
+h1 {
+    color: #ffa500;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Form Styling */
+form {
+    background-color: #2b2b2b;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 165, 0, 0.2);
+}
+
+/* Input Field */
+input.form-control {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    border: 1px solid #ffa500;
+}
+
+input.form-control::placeholder {
+    color: #bbbbbb;
+}
+
+input.form-control:focus {
+    background-color: #444;
+    border-color: #ffaa33;
+    box-shadow: 0 0 5px 2px #ff8800 !important; /* Orange focus shadow */
+    color: white;
+}
+
+/* Submit Button */
+.btn-info {
+    background-color: #ffa500;
+    border-color: #ffa500;
+    color: #1e1e1e;
+    font-weight: bold;
+}
+
+.btn-info:hover {
+    background-color: #ffb733;
+    border-color: #ffb733;
+    color: black;
+}
+
+/* Alerts */
+.alert-success {
+    background-color: #1e3d1e;
+    color: #9ef89e;
+    border-color: #28a745;
+}
+
+.alert-danger {
+    background-color: #3a1e1e;
+    color: #f88a8a;
+    border-color: #dc3545;
+}
+
+/* Responsive container */
+.container {
+    max-width: 700px;
+    margin-top: 40px;
+}
+
+/* Accent-styled link for call-to-action (e.g. 'Create an account') */
+a.accent-link {
+    color: #ffa500;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+a.accent-link:hover {
+    color: #ffb733;
+    text-decoration: underline;
+}
+
+/* Custom Navbar Styles */
+.navbar-custom {
+    background-color: #2b2b2b !important;
+  }
+  
+  .navbar-custom .nav-link {
+    color: #f8f9fa !important; 
+  }
+  
+  .navbar-custom .nav-link:hover {
+    color: #ff9900 !important; 
+  }
+  
+  .navbar-custom .nav-link.active {
+    color: #ff9900 !important;
+    font-weight: bold;
+  }
+
+/* Card Styles */
+.card {
+    background-color: #2c2f33;  /* Dark background for the card */
+    border: 1px solid #444;     /* Subtle border */
+    border-radius: 8px;         /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow to make the card pop */
+    transition: all 0.3s ease;  /* Smooth transition on hover */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Slightly raise the card on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+  }
+  
+  /* Card title */
+  .card-title {
+    color: #ff9900; /* Orange accent for title */
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Card text */
+  .card-text {
+    color: #ced4da; /* Light gray text */
+    font-size: 1rem;
+  }
+  
+  /* Posted by label */
+  .card-body h6 {
+    color: #ff9900; /* Muted grey for label */
+    font-size: 1rem;
+    display: inline;
+    margin-right: 4px;
+  }
+  
+  /* Author link */
+  .card-body h6 a {
+    color: #ffb84d; /* Lighter orange for author names */
+    text-decoration: none;
+  }
+  
+  .card-body h6 a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Card image */
+  .card-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    object-fit: cover;
+    height: 200px;
+  }
+  
+  /* Center cards better */
+  .container.content-container {
+    max-width: 800px;
+    margin-top: 40px;
+  }
+  
