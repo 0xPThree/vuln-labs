@@ -1,5 +1,5 @@
 # Vuln Labs
-A set of vulnerable Docker hosts built to reflect real world scenarios I've encountered.
+A set of vulnerable Docker hosts built to reflect real world scenarios.
 
 The labs generally focus on one vulnerability, but knowing my coding skills there are probably more unintended ways. 
 
