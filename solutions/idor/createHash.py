@@ -1,6 +1,9 @@
-# Usage example:
-# python3 createHash.py Leonhard Euler 11122023
-# User hash: de7834ea8e5d46f324f8ebd90fc0e4ce087ce819f2a1143aa8fb415975466523
+#!/usr/bin/env python3
+"""
+Usage:
+    python3 createHash.py Leonhard Euler 11122023
+    User hash: de7834ea8e5d46f324f8ebd90fc0e4ce087ce819f2a1143aa8fb415975466523
+"""
 
 import hashlib
 
